@@ -1,0 +1,112 @@
+from tkinter import *
+r = Tk()  # Opens new window
+r.title('MEDICAL WASTE')
+r.geometry('1500x1200')
+def sf():
+    file = Toplevel(r)
+    scrollbar = Scrollbar(file)
+    scrollbar.pack(side=RIGHT, fill=Y)
+    l3=Label(file,text="SAFETY PROCEDURES FOR HANDLING MEDICAL WASTE",bg="black",fg="white")
+    l3.config(font=("Imprint MT Shadow", 30))
+    l3.pack()
+    answer = Text(file, yscrollcommand=scrollbar.set, wrap=WORD,bg="light blue", height=1500, width=1500)
+    answer.insert(INSERT, "BANDAGES/GAUZE:\n\nBandages put out to be used with a patient and bandages that are taken off of a patient must be properly thrown away due to the potential for contamination. You can dispose of these items by placing them in a closable red Biohazard bag. Hospital-acquired infections are easily picked up in a hospital, nursing home or even in the office of a school nurse when gloves, gauze, and bandages are not properly disposed of.\n")
+    answer.insert(INSERT,"\n")
+    answer.insert(INSERT,"GLOVES:\n\nIt is better to use non powdered gloves to avoid the added risk of powder as a contaminant.Gloves must be ideally changed after every task and also after 30 minutes during the same task.Glove must be disposed of in the unsorted bin to be disposed of in a landfill or through waste-to-energy plants or reabsorbed from the environment, being completely biodegradable and therefore capable of decomposing within a few months.\n" )
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "ABSORBED BLOOD AND BODILY FLUIDS:\n\n The wearing of protective gloves is required whenever direct hand contact with body wastes and fluids is anticipated. When bodily contact with body wastes or fluids occurs,hands and other skin areas that have come in contact with a person’s body wastes or fluids must be thoroughly washed by the use of soap and vigorous scrubbing of all contacted surfaces under running water for at least ten seconds. Hands and other skin areas should then be dried with paper towels.To remove body wastes and fluids from the environment,a sanitary absorbent agent, designed to absorb and disinfect body wastes and fluids, will be applied in accordance with instructions supplied with the material.When the fluid is absorbed, the material will be vacuumed or swept up and the vacuum bag or sweepings will be disposed of in a plastic bag or lined trash can, secured, and disposed of daily.\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "SHARPS:\n\nSharps are items that can cause cuts or puncture wounds such as needles, scalpels, glass ampoules, razor blades, sharp-pointed pieces of bones and teeth, stitch cutters, and other disposable sharp instruments.All sharps shall be placed in a medical waste container that is rigid,leak resistant,impervious to moisture,puncture resistant , labeled,strength to prevent tearing or normal conditions of use etc and then placed in red Biohazard bag.\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "CHEMOTHERAPY WASTE:\n\nDuring and after cancer treatment, people may have 1 or more medications to take at home. These powerful medications can be very harmful if someone other than the person with cancer takes them. If you cannot take your medication to a disposal location or flush it, you may need to put it in the trash.  Before throwing away medication,follow the steps:\n1.Take all of the medication out of its container.\n2.Put the medication in a sealable container, such as a plastic bag or coffee can.\n3.Mix the medication with used coffee grounds, do not crush pills, tablets, or capsules.\n4.Seal the container and be sure to put it in the trash, not the recycling.\n5.Remove the label or completely cross out any personal information before throwing out or recycling an empty container. This will help protect your identity.\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "PATHOLOGICAL WASTE:\n\nTechnically, this waste falls under the umbrella of regulated medical waste. Within that category, there are two primary means of waste disposal. Depending on the type of waste, that can involve medical waste autoclaves, or it can involve a medical waste incinerator.In most cases the pathological waste is deemed unsuitable for the autoclave machine therefore this undergoes treatment through incinerator which reduces the waste to ash and dust.Three processes are very important for disposing Pathological waste.\n1.Identification-identifying what is pathological in the waste.\n2.Segregation-decide which process should the waste undergo.\n3.Labelling-waste should be properly labelled to indicate which process it should undergo.\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "MASKS-\n\n1.CLOTH MASK (wash) \n Should be washed properly and frequently and left to hang and air dry.\n\n2.SURGICAL MASK (Fold, tie, wrap) \n It should be removed chin upwards and please take care to remove it from the strings and be careful not to touch the front portion while taking off the mask. After taking the mask off, please fold it half inwards, such that droplets from mouth and nose are not exposed. Then, fold the mask into another half, until it looks like a roll. The mask can also be wrapped with its ear loops so that it will not unravel. Then wrap the mask in a tissue paper or polythene bag and immediately discard it in the yellow waste bag. Keep the things handy before disposing it off.\n\n3.N95 RESPIRATOR \nWhen removing the mask, hold the edge of the straps attached to take of the N95 mask. Don’t touch the inside part of the respirator. Wash hands before and after it. Gently remove the mask so as not to disseminate contaminants on the mask. Place the mask in a plastic bag or zip-lock bag. You can also store them in a breathable container such as a paper bag between uses. Secure the bag tightly. Place the plastic bag into garbage can or biomedical waste disposal unit. Never put on a new mask until you have properly washed your hands.\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "BODILY FLUIDS AND ABSORBED BLOOD\n\nAfter restricting access to the contaminated area and putting on the required PPE, your first step should be to sprinkle absorbent powder over the fluids. 10 grams of powder can absorb a litre of liquid. The powder rapidly turns into a gel which can then be scraped up. This powder contains a disinfectant agent, but the gel should still be treated as a contaminant for safety purposes. Solid faeces can be disposed of down a toilet without applying powder.\n All of the used powder should be scraped up and placed inside a biohazard waste bag or sack. Any contaminated materials, such as bedding or clothing, should also be bagged separatelyfor laundry or disposal. If soiled clothes are laundered, this should be done as a separate load.\nAll used absorbent powders, contaminated disposable PPE and heavily soiled clothing, bedding or soft furnishings should be placed in biohazard or clinical waste bags. These should not be mixed with your regular waste. Instead, you should contact your local council or your waste disposal contractor and request a clinical waste collection. The majority of clinical waste is incinerated.\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "CONTAMINATED PPE\n\nThe specific method of disposal will depend largely on what type of contamination is involved. For extremely dangerous substances, a hazmat team will have to take custody of the PPE and go through a process tailored to the exact substance. For standard contaminants like, for example, lead, the PPE must be cleaned first to remove this heavy metal. Once properly cleaned, it will be contained and then disposed of properly to avoid the risk of groundwater contamination. Each situation will have a different set of standards, which is why it is important for safety managers to keep up to date with the latest OSHA standards in this area.")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "                                ************************")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "\n")
+    answer.insert(INSERT, "\n")
+    answer.pack(side=LEFT, expand=1)
+
+    scrollbar.config(command=answer.yview)
+
+
+def sf1():
+    file1 = Toplevel(r)
+    l2 = Label(file1, text="LIST OF WASTE MANAGEMENT COMPANIES \n", bg="black", fg="white")
+    l2.config(font=("Imprint MT Shadow", 15))
+    l2.pack()
+
+    lb = Listbox(file1,width=30)
+    lb.insert(1, "philip@shredding-machine.com")
+    lb.insert(2, "info@ecowise.net.in")
+    lb.insert(3, "info@ecowise.net.in")
+    lb.insert(4, "philip@shredding-machine.com \n")
+    lb.pack()
+
+    l4 = Label(file1, text="kindly send an email to any of the above contacts to initiate collection process")
+    l4.config(font=("Imprint MT Shadow", 15))
+    l4.pack()
+
+    l5 = Label(file1, text="here is the  sample mail")
+    l5.config(font=("Imprint MT Shadow", 15))
+    l5.pack()
+
+    answer1= Text(file1, wrap=WORD, bg="light blue", height=20, width=50)
+    answer1.insert(INSERT,"I , 'NAME'  , from 'NAME OF INSTITUTION'  put in a request for collection of medical waste from the given address.\n NAME:\n ADDRESS:\n LANDMARK: \n TYPE OF WASTE:\n \n \n THANK YOU")
+    answer1.pack()
+
+
+f=Frame(r,height=700,width=1200)
+f.pack(side=TOP)
+
+l1=Label(f,text="MEDICAL WASTE MANAGEMENT",bg="black",fg="white")
+l1.config(font=("Imprint MT Shadow", 30))
+l1.pack()
+
+
+label=Label(f,text="CATEGORISATION OF WASTE")
+label.config(font=("Imprint MT Shadow", 20))
+label.pack()
+
+f2=Frame(r,height=700,width=1200)
+f2.pack()
+
+
+
+
+t = [("INFECTIOUS WASTE","HAZARDOUS WASTE","GENERAL WASTE","RADIOACTIVE WASTE"),
+     ("human or animal tissues(blood or other body parts)","masks(cloth, triple layer, N-95)","paper waste","waste from medical equipments using radioactive isotopes"),
+     ("contaminated bandages/gauze","gloves,needles and syringes","plastics","trace chemotherapy waste"),
+     ("blood contaminated items","coveralls","liquids",""),
+     ("discarded surgical gloves","cotton dressing, linen","",""),
+     ("cultures,stock","bedding","","")
+    ,("swabs to inoculate cultures","plaster casts","",""),
+     ("items contaminated with bodily fluids and blood","pathological waste","","")]
+
+for x in range(8):
+    for y in range(4):
+            w = Text(f2, width=30, height=2,bd=3)
+            w.grid(row=x,column=y)
+            w.insert(END, t[x][y])
+
+r.state("zoomed")
+#scrollbar.config(command=r.yview)
+
+
+b=Button(r,text="click here to know the safety procedures for handling medical waste",activeforeground="red",activebackground="black",bg="blue",fg="white",bd=5,command=sf)
+b.pack(side=LEFT)
+b2=Button(r,text="contact us",activeforeground="red",activebackground="black",bg="blue",fg="white",bd=5,command=sf1)
+b2.pack(side=RIGHT)
+r.mainloop()
