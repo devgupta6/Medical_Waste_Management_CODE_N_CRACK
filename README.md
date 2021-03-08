@@ -1,1 +1,1 @@
-# Medical_Waste_Management_CODE_N_CRACK
+# Medical_Waste_Management
